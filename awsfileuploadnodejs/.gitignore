@@ -1,0 +1,24 @@
+# dependencies
+/node_modules
+../awsfileuploadreact/node_modules
+
+../awsfileuploadreact/.pnp
+../awsfileuploadreact/.pnp.js
+
+# testing
+../awsfileuploadreact/coverage
+
+# production
+# /build
+
+# misc
+/backend/config.env
+../awsfileuploadreact/.DS_Store
+../awsfileuploadreact/.env.local
+../awsfileuploadreact/.env.development.local
+../awsfileuploadreact/.env.test.local
+../awsfileuploadreact/.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
