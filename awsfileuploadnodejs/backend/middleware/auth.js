@@ -10,7 +10,7 @@ export const authuser=catchasyncerror(async(req,res,next)=>{
         return next(new Errorhandler("please login to access the resource",401))
     };
 
-    const accessdata=jwt.verify(token,process.env.jwt_secret);
+    const accessdata=jwt.verify(token,dliljflldjlkfjlkjdlkfjlkdjlkfjlkdjlkfjlkdjlfk);
     req.user=await userdata.findById(accessdata.id);
     
     next()

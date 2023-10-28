@@ -12,8 +12,8 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
 const client = new S3Client({
     region:process.env.region,
     credentials:{
-        accessKeyId:process.env.accessKeyId,
-        secretAccessKey:process.env.secretAccessKey,
+        accessKeyId:"AKIA6O5YTUFGQ5CUBLUP",
+        secretAccessKey:"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",
     }
 });
 
@@ -46,7 +46,7 @@ export const getfilecontroller=catchasyncerror(async(req,res,next)=>{
         const userid=keyparts[4];
         const filename=keyparts[5];
         const command=new GetObjectCommand({
-            Bucket:process.env.bucket,
+            Bucket:"awsbucket12341",
             Key: `uploads/${userid}/${filename}`,
 
         });
@@ -125,7 +125,7 @@ export const getobjectofusercontroller=catchasyncerror(async(req,res,next)=>{
         const userid=keyparts[4];
         const filename=keyparts[5];
         const command=new GetObjectCommand({
-            Bucket:process.env.bucket,
+            Bucket:"awsbucket12341",
             Key: `uploads/${userid}/${filename}`,
 
         });

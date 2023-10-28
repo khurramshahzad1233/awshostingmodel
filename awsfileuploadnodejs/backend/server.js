@@ -9,7 +9,7 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect(process.env.mongodb);
+  await mongoose.connect("mongodb+srv://khurram002300:bloodyhell575@cluster0.ho8coqb.mongodb.net/aws?retryWrites=true&w=majority");
   console.log("connected to database")
 
   
@@ -17,6 +17,6 @@ async function main() {
 
 
 
-app.listen(process.env.PORT ||4000,()=>{
-    console.log(`server is running on port ${process.env.port}`)
+app.listen(5000,()=>{
+    console.log(`server is running on port 5000`)
 })

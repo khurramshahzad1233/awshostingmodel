@@ -50,7 +50,7 @@ kittySchema.pre("save", async function(next){
 });
 
 kittySchema.methods.getjwttoken=function(){
-    return jwt.sign({id:this._id},process.env.jwt_secret,{
+    return jwt.sign({id:this._id},dliljflldjlkfjlkjdlkfjlkdjlkfjlkdjlkfjlkdjlfk,{
         expiresIn:"3d"
     })
 };
